@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 100px;
+    background-color: rgb(251, 188, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.galeria{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 170, 239);
+    display: flex;
+}
+
+.foto{
+     border: 4px solid rgb(0, 0, 0);
+}
+
+.galeria > .foto{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(253, 106, 216);
+}
+
+.container-direita{
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(250, 116, 217);
+    flex-direction: column;
+    display: flex;
+}
+
+.container-superior{
+    flex-grow: 1;
+    background-color: rgb(250, 85, 209);
+    display: flex;
+}
+
+.container-superior-esquerda{
+    background-color: rgb(253, 106, 216);
+    flex-grow: 1;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.container-superior-esquerda .foto{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(253, 106, 216);
+}
+
+.container-superior-esquerda .foto:nth-of-type(1){
+    width: 100%;
+}
+
+.container-superior > .foto{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(253, 106, 216);
+}
+
+.container-inferior{
+    flex-grow: 1;
+    background-color: rgb(253, 106, 216);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.container-inferior .foto{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(253, 106, 216);
+}
+
+.container-inferior .foto:nth-of-type(3){
+    height: 100%;
+    width: 63.5%;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(251, 188, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: italic;
+}
